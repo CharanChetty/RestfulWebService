@@ -14,6 +14,6 @@ public class UserProfileService {
 	public Response addUser(@FormParam("clientName") String name, @FormParam("gender")String Gen,@FormParam("age")int age)
 {
 	
-      return Response.status(200).entity("<p>new user record is added <br>Name:"+name+"Gender:"+Gen+"age:"+age+"</p>").build();
+      return Response.status(200).entity("<p>new user record is added <br>Name:"+name+"<br>Gender:"+Gen+"<br>age:"+age+"</p>").build();
 }
 }
